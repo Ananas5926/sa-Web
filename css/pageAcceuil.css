@@ -3,17 +3,96 @@ p{
     padding: 0px;
 }
 
+
 header{
-    margin: 0%;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right:auto;
+    padding: auto;
     background-color: #E83046;
 }
 
+
 img[alt="logo"]{
-    width: 38px;
+    width: 75px;
     height: auto;
-    padding: 1%;
+    position: relative;
+    top: 15px;
+    left: 10px;
 }
 
-#connexion{
+
+#liens img{
+    width: 35px;
+    height: auto;
+}
+
+#liens{
+    display: flex;
+    position: relative;
+    left: 85%;
+    top: -35px; 
+    width: 30px;
+    height: 45px;
+    justify-content: flex-start;
+}
+
+#aide{
     color: white;
 }
+
+footer{
+    margin: 0%;
+    padding: 2%;
+    background-color: #E83046;
+}
+
+footer > p {
+    color: #fefefe;
+}
+
+
+#premierPara , #deuxiemePara h2{
+    text-transform:lowercase;
+    color: #E83046;
+}
+
+#photo1{
+    width: 600px;
+    height: 365px;
+    padding: 30px;
+}
+
+#photo2{
+    width: 600px;
+    height: 365px;
+    padding: 30px;
+}
+
+#premierPara{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#premierPara > p{
+    position: relative;
+}
+
+#deuxiemePara{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin:5%;
+}
+
+.foot > a{
+    position: relative;
+    left: 5px;
+    top: -20px;
+}
+
+
+
+
