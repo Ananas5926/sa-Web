@@ -1,0 +1,19 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    margin: 0%;
+    background-color: #E83046;
+}
+
+img[alt="logo"]{
+    width: 38px;
+    height: auto;
+    padding: 1%;
+}
+
+#connexion{
+    color: white;
+}
