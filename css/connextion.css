@@ -1,0 +1,77 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    grid-row: 1;
+    margin-left: auto;
+    margin-right:auto;
+    padding: auto;
+    background-color: #E83046;
+}
+
+
+img[alt="logo"]{
+    width: 75px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+
+#liens img{
+    width: 35px;
+    height: auto;
+}
+
+#liens{
+    display: flex;
+    position: relative;
+    left: 85%;
+    top: -35px; 
+    width: 30px;
+    height: 45px;
+    justify-content: flex-start;
+}
+
+#aide{
+    color: white;
+}
+
+footer{
+    margin: 0%;
+    padding: 2%;
+    background-color: #E83046;
+}
+
+footer > p {
+    color: #fefefe;
+}
+
+img{
+    width: 20rem;
+    height: 54rem;
+}
+
+#pageDeCo {
+    border: 2px solid black;
+  width: fit-content;
+}
+
+button{
+    margin: 2%;
+    padding:1%;
+    width: 20rem;
+    height: 4rem;
+    background-color: white;
+    border: 2%;
+    border-color: black;
+}
+
+#corp{
+    display: flex;
+    justify-content: space-around;
+}
