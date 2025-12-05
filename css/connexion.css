@@ -1,0 +1,104 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    grid-row: 1;
+    margin-left: 0px;
+    margin-right:0px;
+    padding: 0px;
+    background-color: #E83046;
+}
+
+
+img[alt="logo"]{
+    width: 65px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    left:180px;
+}
+
+
+#liens img{
+    width: 35px;
+    height: auto;
+}
+
+#liens{
+    display: flex;
+    position: relative;
+    left: 75%;
+    top: -35px; 
+    width: 30px;
+    height: 45px;
+    justify-content: space-between;
+}
+
+#aide , #covoit{
+    color: white;
+    padding: 5px;
+}
+
+footer{
+    margin: 0%;
+    padding: 2%;
+    background-color: #E83046;
+}
+
+footer > p {
+    color: #fefefe;
+}
+
+img{
+    position: relative;
+    width: 26rem;
+    height: 57rem;
+}
+
+#pageDeCo {
+    padding: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 25rem;
+    margin-left: 5rem;
+    margin-right:5rem ;
+    border: 1px solid black;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-color: black;
+}
+
+#corp{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#titre{
+    position:relative;
+    top: -1rem;
+
+    display: flex;
+    justify-content: center;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mail, #mp{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+}
+

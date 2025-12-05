@@ -1,0 +1,53 @@
+*{
+    @font-face {
+  font-family: "Trajan Pro Regular";
+  src:
+      local("Trajan Pro Regular")
+    url("Trajan Pro Regular.ttf");
+  font-weight: bold;
+    }
+}    
+img[alt="logo"]{
+    width: auto;
+    height: 55px;
+    position: absolute;
+    top: 15px;
+    left:160px;
+}
+
+#liens{
+    position: absolute;
+    display: inline;
+    right: 100px;
+}
+
+#bandeau_apps{
+    z-index:999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 86px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #E83046;
+}
+
+#liens a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#liens{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#liens img{
+    height: 20px;
+    width: auto;
+}

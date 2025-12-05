@@ -1,0 +1,57 @@
+
+#crea{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column ;
+    margin: 1rem;
+}
+
+#c1{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 10rem;
+
+}
+
+#c2{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+#c3{
+    border: 1px solid rgb(0, 0, 0) ;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 10rem;
+
+}
+
+#inscription{
+    display: flex;
+}
+
+#sauvgarde{
+    width: 8rem;
+    position: relative;
+    left: 80rem;
+    top:10px
+}
+
+#avisCrenaux{
+    width: 8rem;
+    position: relative;
+    top:15px;
+    left: 1rem;
+
+}

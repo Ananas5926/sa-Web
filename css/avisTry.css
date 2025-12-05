@@ -1,0 +1,17 @@
+h2{
+    margin: 1rem;
+}
+
+#avis{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 65rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+img{
+    position: relative;
+    left: 60rem;
+    top: -1rem;
+}

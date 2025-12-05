@@ -1,0 +1,71 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#aide , #covoit{
+    color: white;
+    padding: 5px;
+}
+
+footer{
+    margin: 0%;
+    padding: 2%;
+    background-color: #E83046;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer > p {
+    color: #fefefe;
+}
+
+
+#premierPara , #deuxiemePara h2{
+    margin-top: 60px;
+    text-transform:lowercase;
+    color: #E83046;
+}
+
+#photo1{
+    width: 600px;
+    height: 365px;
+    padding: 30px;
+}
+
+#photo2{
+    width: 600px;
+    height: 365px;
+    padding: 30px;
+}
+
+#premierPara{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#premierPara > p{
+    position: relative;
+}
+
+#deuxiemePara{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin:5%;
+}
+
+footer a{
+    position: relative;
+    left: 5px;
+    bottom: 30px;
+}
+
+
+
+
