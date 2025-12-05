@@ -1,12 +1,17 @@
 *{
-    @font-face {
+@font-face {
   font-family: "Trajan Pro Regular";
   src:
       local("Trajan Pro Regular")
     url("Trajan Pro Regular.ttf");
   font-weight: bold;
     }
-}    
+}
+
+body{
+    margin-top: 60px;
+}
+
 img[alt="logo"]{
     width: auto;
     height: 55px;
