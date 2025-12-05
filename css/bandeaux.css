@@ -17,13 +17,13 @@ img[alt="logo"]{
     height: 55px;
     position: absolute;
     top: 15px;
-    left:160px;
+    left:18%;
 }
 
 #liens{
     position: absolute;
     display: inline;
-    right: 100px;
+    right: 18%;
 }
 
 #bandeau_apps{
