@@ -1,40 +1,26 @@
 
 #crea{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #E83046;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column ;
     margin: 1rem;
 }
 
-#c1{
-    border: 1px solid rgb(0, 0, 0);
+#c1 ,#c2 , #c3{
+    border: 1px solid #E83046;
     border-radius: 10px;
     padding: 2rem;
     margin: 1rem;
     width: 15rem;
-    height: 10rem;
-
+    height: 11rem;
 }
 
-#c2{
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 1rem;
-    width: 15rem;
-    height: 10rem;
-}
-
-#c3{
-    border: 1px solid rgb(0, 0, 0) ;
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 1rem;
-    width: 15rem;
-    height: 10rem;
-
+.nom{
+    border: 1px solid ;
+    padding: 5px;
 }
 
 #inscription{
@@ -48,10 +34,38 @@
     top:10px
 }
 
-#avisCrenaux{
-    width: 8rem;
-    position: relative;
-    top:15px;
-    left: 1rem;
 
+#sauvgarde{
+    height: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 3rem ;
+    border-color: white;
+    background-color: #E83046;
+    color: white;
+}
+
+input[type='radio']{
+    accent-color: #E83046;
+}
+
+#voiture{
+    margin-top: 2rem;
+    width: auto;
+    height: 15rem;
+}
+
+#Av{
+    margin-top:14rem;
+    margin-left: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5rem;
+    border: solid 1.5px #E83046;
+    border: white;
+    background-color: #E83046;
+}
+
+#Av > a {
+    color: white;
+    text-decoration: none;
 }
