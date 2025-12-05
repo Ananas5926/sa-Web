@@ -2,8 +2,7 @@
     @font-face {
   font-family: "Trajan Pro Regular";
   src:
-      local("Trajan Pro Regular")
-    url("Trajan Pro Regular.ttf");
+    local("sa-Web-main/Trajan Pro Regular/Trajan Pro Regular.ttf");
   font-weight: bold;
     }
 }    

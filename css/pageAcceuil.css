@@ -26,7 +26,6 @@ footer > p {
 
 #premierPara , #deuxiemePara h2{
     margin-top: 60px;
-    text-transform:lowercase;
     color: #E83046;
 }
 
@@ -54,10 +53,10 @@ footer > p {
 
 #deuxiemePara{
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     justify-content: space-around;
     margin:5%;
+    color: #E83046;
 }
 
 footer a{
