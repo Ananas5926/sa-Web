@@ -44,7 +44,7 @@ body {
 .rides-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .ride-card {
@@ -181,7 +181,7 @@ input[type='radio'] {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    
+
 }
 
 .form-group label {

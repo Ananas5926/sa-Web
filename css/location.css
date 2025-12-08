@@ -21,6 +21,7 @@ body {
 
 .covoit-section, .create-ride-section {
     margin-bottom: 4rem;
+
 }
 
 .section-header {
@@ -43,7 +44,7 @@ body {
 /* Rides Grid */
 .rides-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid: 2, 60px;
     gap: 1rem;
 }
 
@@ -54,7 +55,7 @@ body {
     padding: 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid #eee;
-
+    
 }
 
 .ride-card:hover {
@@ -170,7 +171,7 @@ input[type='radio'] {
 .ride-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.5rem; 
 }
 
 .form-group {
@@ -250,4 +251,8 @@ input[type='radio'] {
 #Av > a {
     color: white;
     text-decoration: none;
+}
+
+#choix{
+    
 }
