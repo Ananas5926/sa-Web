@@ -1,53 +1,237 @@
+@import url('./variables.css');
 
-#crea{
-    border: 1px solid #E83046;
-    border-radius: 10px;
-    padding: 1rem;
-    padding-left: 2rem;
-    display: flex;
-    flex-direction: column ;
-    margin: 1rem;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--siteBackgroundColor);
+    color: var(--paragraphMediumColor);
+    font-family: var(--body-font-font-family);
+    font-weight: var(--body-font-font-weight);
+    line-height: var(--body-font-line-height);
 }
 
-#c1 ,#c2 , #c3{
-    border: 1px solid #E83046;
-    border-radius: 10px;
+/* Main Layout */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
-    margin: 1rem;
-    width: 15rem;
-    height: 11rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-.nom{
-    border: 1px solid ;
-    padding: 5px;
+.covoit-section, .create-ride-section {
+    margin-bottom: 4rem;
 }
 
-#inscription{
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-family: 'Trajan Pro 3', serif;
+    color: var(--accentColor, #d33546);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Rides Grid */
+.rides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.ride-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #eee;
+}
+
+.ride-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border-color: var(--accentColor, #d33546);
+}
+
+.ride-header {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
 }
 
-#sauvgarde{
-    width: 8rem;
-    position: relative;
-    left: 80rem;
-    top:10px
+.driver-info h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
 }
 
+.rating {
+    color: #ffd700;
+    font-size: 0.9rem;
+}
 
-#sauvgarde{
-    height: 2rem;
+.date {
+    background: #f8f9fa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--accentColor, #d33546);
+    font-weight: 600;
+}
+
+.ride-details p {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.ride-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.passenger-select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    accent-color: var(--accentColor, #d33546);
+}
+
+.btn-avis {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accentColor, #d33546);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.btn-avis:hover {
+    text-decoration: underline;
+}
+
+/* Create Ride Form */
+.form-container {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 2rem;
-    border-radius: 3rem ;
-    border-color: white;
-    background-color: #E83046;
+}
+
+.form-header h2 {
+    font-family: 'Trajan Pro 3', serif;
+    color: var(--accentColor, #d33546);
+    margin: 0;
+}
+
+.form-icon {
+    width: 60px;
+    height: auto;
+}
+
+.ride-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: var(--accentColor, #d33546);
+    outline: none;
+}
+
+.btn-submit {
+    background-color: var(--accentColor, #d33546);
     color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
 }
 
-input[type='radio']{
-    accent-color: #E83046;
+.btn-submit:hover {
+    background-color: var(--accentColor, #d33546);
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .rides-grid {
+        grid-template-columns: 1fr;
+    }
+}
 #voiture{
     margin-top: 2rem;
     width: auto;
@@ -60,9 +244,9 @@ input[type='radio']{
     width: 5rem;
     height: 2rem;
     border-radius: 5rem;
-    border: solid 1.5px #E83046;
+    border: solid 1.5px var(--accentColor, #d33546);
     border: white;
-    background-color: #E83046;
+    background-color: var(--accentColor, #d33546);
 }
 
 #Av > a {

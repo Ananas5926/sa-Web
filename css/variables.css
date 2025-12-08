@@ -1,0 +1,64 @@
+/* Variables CSS */
+/* Sert à configurer les variables utilisées dans le site 
+pour une meilleure gestion des couleurs et des polices de caractères.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('../fonts/stylesheet.css');
+
+:root {
+    /* Couleurs utilisée depuis le site Team Cherry */
+    --white-hsl: 0, 0%, 100%;
+    --black-hsl: 0, 0%, 0%;
+    --accent-hsl: 0, 58%, 61%; 
+    --darkAccent-hsl: 240, 3%, 23%; 
+    --lightAccent-hsl: 0, 0%, 97%; 
+    --accentColor: #d33546;
+    
+    --siteBackgroundColor: hsla(var(--white-hsl), 1);
+    --paragraphMediumColor: hsla(var(--black-hsl), 1);
+    --headingLargeColor: hsla(var(--black-hsl), 1);
+    --navigationLinkColor: hsla(var(--black-hsl), 1);
+
+    /* Configuration des fontss */
+    --base-font-size: 16px;
+    --heading-font-font-family: "Poppins", sans-serif;
+    --heading-font-font-style: normal;
+    --heading-font-font-weight: 500;
+    --heading-font-text-transform: none;
+    --heading-font-letter-spacing: 0em;
+    --heading-font-line-height: 1.4em;
+    
+    --body-font-font-family: "Poppins", sans-serif;
+    --body-font-font-style: normal;
+    --body-font-font-weight: 300;
+    --body-font-text-transform: none;
+    --body-font-letter-spacing: 0em;
+    --body-font-line-height: 1.8em;
+    
+    --meta-font-font-family: "Poppins", sans-serif;
+    --meta-font-font-style: normal;
+    --meta-font-font-weight: 400;
+    --meta-font-text-transform: none;
+    --meta-font-letter-spacing: 0em;
+    --meta-font-line-height: 1.2em;
+
+    --heading-1-size: 4rem;
+    --heading-1-size-value: 4;
+    --heading-2-size: 2.8rem;
+    --heading-2-size-value: 2.8;
+    --heading-3-size: 2.2rem;
+    --heading-3-size-value: 2.2;
+    --heading-4-size: 1.2rem;
+    --heading-4-size-value: 1.2;
+    --large-text-size: 1.4rem;
+    --large-text-size-value: 1.4;
+    --normal-text-size: 1rem;
+    --normal-text-size-value: 1;
+    --small-text-size: .9rem;
+    --small-text-size-value: .9;
+    --normal-meta-size: 1rem;
+    --normal-meta-size-value: 1;
+    --small-meta-size: .8rem;
+    --small-meta-size-value: .8;
+}

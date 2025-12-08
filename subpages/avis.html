@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/avis.css">
+    <link rel="stylesheet" href="../css/bandeaux.css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
+</head>
+<body>
+    <header id="bandeau_apps">
+        <a href="../index.html" id="index"><img alt="logo" src="../img/logo.png"></a>
+        <div id="liens">
+            <a href="../index.html">Accueil</a>
+            <a href="aide.html" id="aide">Aide</a>
+            <a href="covoit.html" id="covoit" style="text-decoration: underline;">Covoiturage</a>
+            <a href="https://x.com/TeamCherryGames" target="_blank"><img alt="twitter" src="../img/X.png"></a>
+            <a href="https://www.youtube.com/user/teamcherrygames" id="youtube" target="_blank"><img alt="youtube" src="../img/Youtube.png"></a>
+            <a href="https://www.facebook.com/teamcherrygames" id="facebook" target="_blank"><img alt="facebook" src="../img/facebook.png"></a>
+            <a href="https://bsky.app/profile/did:plc:njcr3moahtid7crxdjtu26jp" id="bluesky" target="_blank"><img alt="bluesky" src="../img/bluesky.png"></a>
+            <a href="connexion.html" id="connexion" target="_blank"><img alt="logo connexion" src="../img/connexionLogo.png"></a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section">
+            <img id="voiture" src="../img/voiture.png" alt="voiture">
+            <div id="crenau">
+                <p>A qui voulez-vous laisser votre avis :<input type="list" id="nom"></p>
+                <p>Votre avis :<input type="text" id="avis"></p>
+                <button id="enregistrer">enregistrer</button>
+            </div>
+            <img id="trotinette" src="../img/Trotinette.png" alt="trotinette">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Team Cherry is a small indie games team in Adelaide, South Australia.</p>
+                <p>Our mission is to build crazy and exciting worlds for you to explore and conquer.</p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#">Blog</a> | <a href="#">Games</a> | <a href="#">Merchandise</a> | <a href="#">About</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">FAQ</a> | <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://x.com/TeamCherryGames" target="_blank" class="social-icon" aria-label="X">
+                        <svg class="icone-sociale-svg" viewBox="0 0 64 64">
+                            <use class="use-icone" xlink:href="#icone-x"></use>
+                            <use class="use-masque" xlink:href="#masque-x"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/user/teamcherrygames" target="_blank" class="social-icon" aria-label="YouTube">
+                        <svg class="icone-sociale-svg" viewBox="0 0 64 64">
+                            <use class="use-icone" xlink:href="#icone-youtube"></use>
+                            <use class="use-masque" xlink:href="#masque-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/teamcherrygames" target="_blank" class="social-icon" aria-label="Facebook">
+                        <svg class="icone-sociale-svg" viewBox="0 0 64 64">
+                            <use class="use-icone" xlink:href="#icone-facebook"></use>
+                            <use class="use-masque" xlink:href="#masque-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://bsky.app/profile/did:plc:njcr3moahtid7crxdjtu26jp" target="_blank" class="social-icon" aria-label="Bluesky">
+                        <svg class="icone-sociale-svg" viewBox="0 0 64 64">
+                            <use class="use-icone" xlink:href="#icone-bluesky"></use>
+                            <use class="use-masque" xlink:href="#masque-bluesky"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footercopyright">
+            <p>Copyright © 2025 Team Cherry</p>
+        </div>
+    </footer>
+
+    <!-- Symboles SVG pour les icônes sociales -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
+        <symbol id="icone-x" viewBox="0 0 64 64"><g class="svg-icon"><path d="M34.426 29.9327L43.9189 18.5H41.6694L33.4267 28.4268L26.8432 18.5H19.25L29.2055 33.5111L19.25 45.5H21.4997L30.2042 35.0169L37.1568 45.5H44.75L34.426 29.9327ZM22.3102 20.2546H25.7656L41.6704 43.8252H38.2151L22.3102 20.2546Z"/></g></symbol>
+        <symbol id="masque-x" viewBox="0 0 64 64"><g class="svg-mask"><path d="M38.2151 43.8252H41.6704L25.7656 20.2546H22.3102L38.2151 43.8252Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H64V64H0V0ZM43.9189 18.5L34.426 29.9327L44.75 45.5H37.1568L30.2042 35.0169L21.4997 45.5H19.25L29.2055 33.5111L19.25 18.5H26.8432L33.4267 28.4268L41.6694 18.5H43.9189Z"/></g></symbol>
+        <symbol id="icone-youtube" viewBox="0 0 64 64"><path d="M46.7,26c0,0-0.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C38.3,21.4,32,21.4,32,21.4h0 c0,0-6.3,0-10.5,0.3c-0.6,0.1-1.9,0.1-3,1.3c-0.9,0.9-1.2,3-1.2,3S17,28.4,17,30.9v2.3c0,2.4,0.3,4.9,0.3,4.9s0.3,2.1,1.2,3 c1.1,1.2,2.6,1.2,3.3,1.3c2.4,0.2,10.2,0.3,10.2,0.3s6.3,0,10.5-0.3c0.6-0.1,1.9-0.1,3-1.3c0.9-0.9,1.2-3,1.2-3s0.3-2.4,0.3-4.9 v-2.3C47,28.4,46.7,26,46.7,26z M28.9,35.9l0-8.4l8.1,4.2L28.9,35.9z"/></symbol>
+        <symbol id="masque-youtube" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M47,33.1c0,2.4-0.3,4.9-0.3,4.9s-0.3,2.1-1.2,3c-1.1,1.2-2.4,1.2-3,1.3 C38.3,42.5,32,42.6,32,42.6s-7.8-0.1-10.2-0.3c-0.7-0.1-2.2-0.1-3.3-1.3c-0.9-0.9-1.2-3-1.2-3S17,35.6,17,33.1v-2.3 c0-2.4,0.3-4.9,0.3-4.9s0.3-2.1,1.2-3c1.1-1.2,2.4-1.2,3-1.3c4.2-0.3,10.5-0.3,10.5-0.3h0c0,0,6.3,0,10.5,0.3c0.6,0.1,1.9,0.1,3,1.3 c0.9-0.9,1.2-3,1.2-3s0.3-2.4,0.3-4.9V33.1z M28.9,35.9l8.1-4.2l-8.1-4.2L28.9,35.9z"/></symbol>
+        <symbol id="icone-facebook" viewBox="0 0 64 64"><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"/></symbol>
+        <symbol id="masque-facebook" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z"/></symbol>
+        <symbol id="icone-bluesky" viewBox="0 0 64 64"><g class="svg-icon"><path d="M22.9364 19.8673C26.6051 22.579 30.551 28.0775 32 31.0279C33.449 28.0775 37.3949 22.579 41.0636 19.8673C43.7108 17.9106 48 16.3966 48 21.2142C48 22.1763 47.4397 29.2966 47.1111 30.4526C45.9688 34.4714 41.8066 35.4965 38.1041 34.8761C44.5759 35.9605 46.2222 39.5526 42.6666 43.1448C35.914 49.9669 32.9612 41.4331 32.2046 39.2464C32.0659 38.8455 32.001 38.658 32 38.8175C31.999 38.658 31.9341 38.8455 31.7954 39.2464C31.0388 41.4331 28.086 49.9669 21.3333 43.1448C17.7778 39.5526 19.4241 35.9605 25.8959 34.8761C22.1934 35.4965 18.0312 34.4714 16.8889 30.4526C16.5603 29.2966 16 22.1763 16 21.2142C16 16.3966 20.2893 17.9106 22.9364 19.8673Z"/></g></symbol>
+        <symbol id="masque-bluesky" viewBox="0 0 64 64"><g class="svg-mask"><path d="M64 64H0V0H64V64ZM48 21.2139C47.9998 16.3967 43.7106 17.9106 41.0635 19.8672C37.3948 22.579 33.449 28.0779 32 31.0283C30.551 28.0779 26.6052 22.579 22.9365 19.8672C20.2895 17.9106 16.0002 16.3967 16 21.2139C16 22.1758 16.5601 29.2945 16.8887 30.4521C18.0309 34.4708 22.1931 35.4962 25.8955 34.876C19.4242 35.9605 17.7779 39.5526 21.333 43.1445C28.0857 49.9667 31.0393 41.4328 31.7959 39.2461C31.9345 38.8456 31.999 38.6581 32 38.8174C32.001 38.6581 32.0655 38.8456 32.2041 39.2461C32.9607 41.4328 35.9143 49.9667 42.667 43.1445C46.2221 39.5526 44.5758 35.9605 38.1045 34.876C41.8069 35.4962 45.9691 34.4708 47.1113 30.4521C47.44 29.2945 48 22.1758 48 21.2139Z"/></g></symbol>
+    </svg>
+</body>
+</html>

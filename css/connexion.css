@@ -1,104 +1,175 @@
-p{
-    margin: 0px;
-    padding: 0px;
+@import url('./variables.css');
+
+/* Background Image Setup */
+body {
+    background-image: url('../img/hollo1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-header{
-    grid-row: 1;
-    margin-left: 0px;
-    margin-right:0px;
-    padding: 0px;
-    background-color: #E83046;
-}
-
-
-img[alt="logo"]{
-    width: 65px;
-    height: auto;
-    position: relative;
-    top: 15px;
-    left:180px;
-}
-
-
-#liens img{
-    width: 35px;
-    height: auto;
-}
-
-#liens{
+/* Main Layout */
+.main-content {
+    min-height: 80vh; 
     display: flex;
-    position: relative;
-    left: 75%;
-    top: -35px; 
-    width: 30px;
-    height: 45px;
-    justify-content: space-between;
-}
-
-#aide , #covoit{
-    color: white;
-    padding: 5px;
-}
-
-footer{
-    margin: 0%;
-    padding: 2%;
-    background-color: #E83046;
-}
-
-footer > p {
-    color: #fefefe;
-}
-
-img{
-    position: relative;
-    width: 26rem;
-    height: 57rem;
-}
-
-#pageDeCo {
+    align-items: center;
+    justify-content: center;
     padding: 3rem;
-    margin-top: 10rem;
-    margin-bottom: 25rem;
-    margin-left: 5rem;
-    margin-right:5rem ;
-    border: 1px solid black;
-    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Login Card */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 17px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.login-header h2 {
+    font-family: 'Trajan Pro 3', serif;
+    color: var(--accentColor);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Form Styles */
+.login-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 1.5rem;
 }
 
-button{
+.form-group {
     display: flex;
-    justify-content: center;
-    margin: 2rem;
-    padding: 1rem;
-    background-color: white;
-    border-color: black;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-#corp{
+.form-group label {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+    border-color: var(--accentColor, #d33546);
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(211, 53, 70, 0.1);
+}
+
+.form-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.remember-me input {
+    accent-color: var(--accentColor, #d33546);
+}
+
+.forgot-password {
+    color: var(--accentColor, #d33546);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background-color: var(--accentColor, #d33546);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--accentColor, #d33546);
+    transform: translateY(-1px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.login-footer a {
+    color: var(--accentColor);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 2rem;
+    }
     
-}
-
-#titre{
-    position:relative;
-    top: -1rem;
-
-    display: flex;
-    justify-content: center;
-
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#mail, #mp{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    justify-content: center;
+    .login-header h2 {
+        font-size: 2rem;
+    }
 }
 
