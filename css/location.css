@@ -215,8 +215,21 @@ input[type='radio'] {
     background-color: var(--accentColor, #d33546);
 }
 
+#choix{
+    font-weight: 500;
+    color: #333;
+}
 
-
+.quoi{
+    width: auto;
+    height: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: flex;
+    gap: 1px;
+    
+}
 /* Responsive */
 @media (max-width: 768px) {
     .main-content {
@@ -251,8 +264,4 @@ input[type='radio'] {
 #Av > a {
     color: white;
     text-decoration: none;
-}
-
-#choix{
-    
 }
