@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <style>
+    .message_connected{
+        display: none;
+        color: var(--accentColor);
+        font-weight: bold;
+        text-align: center;
+    }
+    #connected:target{
+        display: block;
+        scroll-margin-top: 100px;
+    }
+    </style>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +39,7 @@
 </header>
 
 <main class="main-content">
+    <p id="connected" class="message_connected">Vous êtes maintenant connecté à votre compte</p>
     <section class="hero-accueil">
         <div class="hero-contenu">
             <div class="hero-texte">
